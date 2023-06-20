@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Psychiatry Website - Payment</title>
+  <style>
+    /* Add your CSS styles here */
+body{
+    background-image: url(../images/ke-flag.jpg);
+}
+    .header {
+      text-align: center;
+    }
+
+    .navigation {
+      text-align: left;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .payment-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .payment-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .payment-form input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .payment-form button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .payment-form button:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Psychiatry Website</h1>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li><a href="../html/home page.html">Home</a></li>
+        <li><a href="../html/our mission.html">our mission</a></li>
+        <li><a href="../html/our servises.html">Services</a></li>
+        <li><a href="../html/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="payment-form">
+        <h2>Payment</h2>
+        <form>
+          <label for="payment">Select Payment Method:</label><br>
+          <input type="radio" id="online" name="payment" value="online" required>
+          <label for="online">Online</label><br>
+          <input type="radio" id="cash" name="payment" value="cash">
+          <label for="cash">Cash Transfer</label><br><br>
+
+          <div id="onlinePaymentOptions" style="display: none;">
+            <label for="onlineOptions">Select Online Payment Option:</label><br>
+            <input type="radio" id="bank" name="onlineOptions" value="bank">
+            <label for="bank">Bank Transfer (Business No: 247247, Account No: 2464777)</label><br>
+            <input type="radio" id="paypal" name="onlineOptions" value="paypal">
+            <label for="paypal">PayPal (Email: muetijohnbosco35@gmail.com)</label><br>
+            <input type="radio" id="mpesa" name="onlineOptions" value="mpesa">
+            <label for="mpesa">M-Pesa</label><br>
+          </div><br>
+
+          <div id="mpesaOptions" style="display: none;">
+            <label for="mpesaType">Select M-Pesa Option:</label><br>
+            <input type="radio" id="sendMoney" name="mpesaType" value="sendMoney">
+            <label for="sendMoney">Send Money (Phone: 0740213780)</label><br>
+            <input type="radio" id="lipaNaMpesa" name="mpesaType" value="lipaNaMpesa">
+            <label for="lipaNaMpesa">Lipa na M-Pesa (Business No: 247247)</label><br>
+          </div><br>
+
+          <button type="button" onclick="proceedToReceipt()">Proceed to Payment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function proceedToReceipt() {
+      var paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+
+      if (paymentMethod === "online") {
+        var onlineOption = document.querySelector('input[name="onlineOptions"]:checked').value;
+
+        if (onlineOption === "bank") {
+          alert("Please make a bank transfer to the following account:\nBusiness No: 247247\nAccount No: 2464777");
+        } else if (onlineOption === "paypal") {
+          alert("Please make a PayPal payment to muetijohnbosco35@gmail.com");
+        } else if (onlineOption === "mpesa") {
+          document.getElementById("mpesaOptions").style.display = "block";
+        }
+      } else if (paymentMethod === "cash") {
+        alert("Please make a cash transfer and contact us through WhatsApp at 0740213780");
+      }
+    }
+  </script>
+</body>
+</html>

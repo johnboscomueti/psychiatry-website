@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Psychiatry Website - Registration</title>
+  <style>
+ 
+  body {
+  background-color: white;
+  color: #333;
+  font-family: Arial, sans-serif;
+  background-image: url(../images/ke-flag.jpg);
+  
+}
+form{
+  align-items: center;
+}
+
+h1, h2, h3 {
+  color: whitesmoke;
+  align-items: center;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0055cc;
+}
+
+</style>
+</head>
+<body>
+  <h1>Registration</h1>
+  
+  <form action="../html/login.html" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <!-- Add any other necessary fields for registration -->
+  </form>
+  <form action="../html/home page.html" method="POST">
+    <button onclick="location.href="Home page">register</button>
+</form>
+  
+  <p>Already have an account? <a href="../html/login.html">Login</a></p>
+  
+  <!-- Add any additional content or elements as needed -->
+  
+  <!-- Add your JavaScript scripts and other necessary scripts -->
+</body>
+</html>

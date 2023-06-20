@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Psychiatry Homepage</title>
+  <style>
+    /* Add your CSS styling here */
+    body {
+
+      background-size: cover;
+      background-position: center;
+      background-image: url(../images/ke-flag.jpg);
+      font-family: Arial, sans-serif;
+    }
+    
+    .header {
+      padding: 20px;
+      background-image: url("../images/Flag_of_Kenya.svg"); /* Replace "background.jpg" with the path to your background image */
+      background-color: #333;
+      color: white;
+      height: 5000;
+    }
+    
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    
+    .navigation {
+      float: right;
+      margin-top: 10px;
+    }
+    
+    .navigation ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navigation ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .navigation ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .navigation ul li a:hover {
+      color: yellow;
+    }
+    
+    .hero-section {
+      padding: 100px;
+      text-align: center;
+    }
+    
+    .hero-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    
+    .hero-section button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .con{
+        background-color: black;
+        border: #333;
+        height: 1000px;
+        background-image: url(../images/ke-flag.jpg)
+    }
+    .container_b{
+        background-color: black;
+        text-align: center;
+    }
+    .container_b .content {
+      display: flex;
+    }
+
+    .container_b .content img {
+      float: left;
+      width: 50%;
+    }
+
+    .container_b .content p {
+      align-items: center;
+      padding: 10px;
+      background-color:whitesmoke;
+      border-radius: 5px;
+      transition: transform 0.1 ease;
+    }
+
+    .container_b .content p:hover {
+      transform: translateX(5px);
+
+    } .logo {
+      float: right;
+      background-color: aliceblue;
+    }
+
+    .logo img {
+      max-width: 100px;
+      height: auto;
+    }
+    .encouragement {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .encouragement-item {
+      text-align: center;
+    }
+
+    .encouragement-item img {
+      max-width: 200px;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .encouragement-item img:hover {
+      transform: scale(1.1);
+    }
+
+    .encouragement-item p {
+  
+      font-weight: bold;
+    }
+   
+    .floating-image {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    .chat-container {
+      position: fixed;
+      bottom: 80px;
+      left: 20px;
+      width: 300px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 10px;
+      display: none;
+      z-index: 9999;
+    }
+
+    .chat-messages {
+      max-height: 200px;
+      overflow-y: scroll;
+    }
+
+    .system-message {
+      text-align: right;
+    }
+
+    .patient-message {
+      text-align: left;
+    }
+
+    .system-icon {
+      float: right;
+      margin-left: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .patient-icon {
+      float: left;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="container">
+    <div class="logo">
+      <img src="../images/database.png" alt="Logo">
+    </div>
+    <div class="con">
+  <div class="header">
+    <h1>health 254</h1>
+    <div class="navigation">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li>
+          <a href="#">About Us</a>
+          <ul>
+            <li><a href="../html/ourteam.html">Our Team</a></li>
+            <li><a href="../html/our mission.html">Our Mission</a></li>
+          </ul>
+        </li>
+        <li><a href="../html/our servises.html">Our Services</a></li>
+        <li><a href="../html/FAQ.html">FAQ</a></li>
+        <li><a href="../html/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="hero-section">
+    <h2>Book an Appointment Today!</h2>
+    <form action="../html/bookingform.html" method="POST">
+    <button onclick="location.href= "bookingform.html">Book Now</button>
+</form>
+  </div>
+</div>
+<div class="container_b">
+    <div class="content">
+      <img src="../images/happy pat.jpg" alt="Image" style="float: right; width: 500px; height: 500px;">
+      <p>
+        At our psychiatry practice, we believe in the incredible power of personal transformation. We are here to support you every step of the way on your journey towards mental and emotional well-being. Our dedicated team of experienced professionals is committed to providing compassionate care, tailored treatment plans, and a safe space for you to express yourself. Remember, you have the strength within you to overcome any challenge and embrace a healthier, happier life. Together, we can achieve remarkable breakthroughs and create a future filled with hope, resilience, and personal growth. Take the first step today and let us guide you towards a brighter tomorrow.
+        </p>
+      </p>
+    </div>
+ 
+</div>
+   <div class="encouragement">
+      <div class="encouragement-item">
+        <img src="../images/pat1.webp" alt="Image 1">
+        <p>"Your mental health journey is unique, <br> you are stronger than you realize.<br> Keep going, one step at a time, and embrace the<br> progress you're making."</p>
+      </div>
+      <div class="encouragement-item">
+        <img src="../images/pat2.jpg" alt="Image 2">
+        <p>"Remember that healing takes time.<br> Be patient with yourself, and<br> trust that you have the resilience <br>to overcome any challenge. You're on the<br> path to a brighter and healthier future."</p>
+      </div>
+      <div class="encouragement-item">
+        <img src="../images/pat3.jpeg" alt="Image 3">
+        <p>"You are not alone in this journey. <br>Reach out for support when you need it, lean on your<br> loved ones, and remember that there is a whole<br> community ready to uplift and empower you. You have the <br>strength to create positive change in your life."</p>
+      </div>
+    </div>
+    <div class="floating-image">
+      <img src="../images/agnes.jpg" alt="Floating Image">
+    </div>
+  
+    <div class="chat-container">
+      <div class="chat-messages">
+        <div class="system-message">
+          <img src="../images/agnes.jpg" alt="System Icon" class="system-icon">
+          <p>Agnes: How can we help you?</p>
+        </div>
+      </div>
+      <textarea placeholder="Type your message"></textarea>
+      <button>Send</button>
+    </div>
+  
+    <script>
+      // JavaScript code to show/hide the chatbox
+      document.addEventListener('DOMContentLoaded', function() {
+        var floatingImage = document.querySelector('.floating-image');
+        var chatContainer = document.querySelector('.chat-container');
+  
+        floatingImage.addEventListener('click', function() {
+          chatContainer.style.display = 'block';
+        });
+      });
+    </script>
+</body>
+</html>
